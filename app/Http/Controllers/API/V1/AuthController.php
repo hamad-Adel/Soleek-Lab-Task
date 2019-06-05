@@ -56,7 +56,7 @@ class AuthController extends Controller
     	if (!$user->save()) 
     		return response()->json(['error' => 'An error occurred'], 404);
 
-    	return response()->json(['msg' => 'user registered successfully', 'user'=>$user], 404);
+    	return response()->json(['msg' => 'user registered successfully', 'user'=>$user], 200);
 
     }
 
